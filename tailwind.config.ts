@@ -17,10 +17,13 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
+        body: ['Space Grotesk', 'sans-serif'],
         headline: ['Space Grotesk', 'sans-serif'],
         code: ['Source Code Pro', 'monospace'],
         cursive: ['Dancing Script', 'cursive'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       colors: {
         background: 'hsl(var(--background))',

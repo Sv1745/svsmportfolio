@@ -14,8 +14,8 @@ export function Section({ id, title, subtitle, children, className }: SectionPro
     <section id={id} className={cn("py-16 md:py-24", className)}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h2 className="gradient-heading text-3xl md:text-4xl font-headline font-bold tracking-wider uppercase">{title}</h2>
-          <p className="mt-2 text-lg text-foreground/70">{subtitle}</p>
+          <h2 className="gradient-heading text-3xl md:text-4xl font-headline font-bold tracking-wider uppercase" style={{ filter: 'drop-shadow(0 0 8px #000)' }}>{title}</h2>
+          <p className="mt-2 text-lg text-foreground/90">{subtitle}</p>
           <div className="mt-4 w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </div>
         {children}

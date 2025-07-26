@@ -11,8 +11,9 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, Mail } from "lucide-react";
 import { useState } from "react";
+import { sendMessage } from "@/ai/flows/contact";
 
-const FormSchema = z.object({
+export const ContactFormSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
     email: z.string().email({ message: "Please enter a valid email." }),
     message: z.string().min(10, { message: "Message must be at least 10 characters." }),
@@ -22,26 +23,39 @@ export function Contact() {
     const { toast } = useToast();
     const [isLoading, setIsLoading] = useState(false);
 
-    const form = useForm<z.infer<typeof FormSchema>>({
-        resolver: zodResolver(FormSchema),
+    const form = useForm<z.infer<typeof ContactFormSchema>>({
+        resolver: zodResolver(ContactFormSchema),
         defaultValues: { name: "", email: "", message: "" },
     });
 
-    async function onSubmit(data: z.infer<typeof FormSchema>) {
+    async function onSubmit(data: z.infer<typeof ContactFormSchema>) {
         setIsLoading(true);
-        // Here you would typically send the form data to a backend service
-        console.log(data);
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate network request
-        setIsLoading(false);
-        form.reset();
-        toast({
-            title: "Message Sent!",
-            description: "Thanks for reaching out. I'll get back to you soon.",
-        });
+        try {
+            await sendMessage(data);
+            form.reset();
+            toast({
+                title: "Message Sent!",
+                description: "Thanks for reaching out. I'll get back to you soon.",
+            });
+        } catch (error) {
+            console.error("Failed to send message:", error);
+            toast({
+                title: "Uh oh! Something went wrong.",
+                description: "There was a problem with your request. Please try again.",
+                variant: "destructive",
+            });
+        } finally {
+            setIsLoading(false);
+        }
     }
 
     return (
-        <Section id="contact" title="Contact" subtitle="Let's Connect and Create Something Amazing" className="bg-card/20 backdrop-blur-sm">
+        <Section 
+            id="contact" 
+            title="Contact" 
+            subtitle="Let's Connect and Create Something Amazing" 
+            className="bg-transparent"
+        >
             <Card className="max-w-2xl mx-auto bg-card/80 border-primary/30 p-6 md:p-8">
                  <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -73,5 +87,5 @@ export function Contact() {
                 </Form>
             </Card>
         </Section>
-    )
+    );
 }

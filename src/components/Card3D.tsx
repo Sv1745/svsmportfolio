@@ -26,7 +26,8 @@ export function Card3D({ children, className, ...props }: Card3DProps) {
       transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`,
     });
     setGlowStyle({
-      background: `radial-gradient(circle at ${x}px ${y}px, hsla(var(--primary) / 0.1), hsla(var(--primary) / 0) 50%)`,
+      '--glow-x': `${x}px`,
+      '--glow-y': `${y}px`,
     });
   };
 
@@ -38,22 +39,28 @@ export function Card3D({ children, className, ...props }: Card3DProps) {
   };
 
   return (
-    <Card
+    <div
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={cn('relative transition-transform duration-300 ease-out will-change-transform', className)}
-      style={transformStyle}
+      className={cn(
+        'relative transition-transform duration-300 ease-out will-change-transform',
+        'before:absolute before:inset-0 before:rounded-[inherit] before:bg-gradient-radial before:from-primary/10 before:to-transparent before:opacity-0 before:transition-opacity before:duration-300',
+        'hover:before:opacity-100',
+        className
+      )}
+      style={{
+        ...transformStyle,
+        ...glowStyle,
+        '--glow-x': '50%',
+        '--glow-y': '50%',
+      } as React.CSSProperties}
       {...props}
     >
-      <div className="relative z-10 h-full">{children}</div>
-      {isHovering && (
-        <div
-          className="pointer-events-none absolute inset-0 z-20 opacity-100 transition-opacity duration-300"
-          style={glowStyle}
-        />
-      )}
-    </Card>
+      <div className="relative z-10 h-full flex flex-col">
+        {children}
+      </div>
+    </div>
   );
 }

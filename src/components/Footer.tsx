@@ -9,16 +9,16 @@ export function Footer() {
           Srivathsa S Murthy
         </div>
         <div className="flex gap-4">
-            <Link href="https://github.com/Sv1745" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+            <Link href="https://github.com/Sv1745" target="_blank" rel="noopener noreferrer" className="text-foreground/90 hover:text-primary transition-colors">
                 <Github className="h-6 w-6" />
                 <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="https://www.linkedin.com/in/srivathsa-s-murthy/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+            <Link href="https://www.linkedin.com/in/srivathsa-s-murthy/" target="_blank" rel="noopener noreferrer" className="text-foreground/90 hover:text-primary transition-colors">
                 <Linkedin className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
             </Link>
         </div>
-        <p className="text-sm text-foreground/60">&copy; {new Date().getFullYear()} Srivathsa S Murthy. All Rights Reserved.</p>
+        <p className="text-sm text-foreground/80">&copy; {new Date().getFullYear()} Srivathsa S Murthy. All Rights Reserved.</p>
       </div>
     </footer>
   );

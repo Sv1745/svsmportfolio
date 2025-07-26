@@ -9,36 +9,36 @@ import { Card3D } from "./Card3D";
 
 const projectData = [
   {
-    title: "Cosmic Anomaly Detector",
-    description: "An AI-powered system that analyzes astronomical data to detect and classify celestial anomalies, leveraging deep learning models.",
+    title: "Visitlytics",
+    description: "A visitor tracking application designed to cater to a wide range of business requirements, built with Node.js and EJS.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "galaxy space",
-    tags: ["Python", "TensorFlow", "AstroPy", "AI/ML"],
-    link: "https://github.com/Sv1745",
+    imageHint: "visitor analytics",
+    tags: ["TypeScript", "Node.js", "EJS", "PLpgSQL"],
+    link: "https://github.com/Sv1745/visitlytics",
   },
   {
-    title: "Embedded Door Monitoring System",
-    description: "A secure monitoring system built on embedded Linux, using Raspberry Pi and various sensors to provide real-time door status updates.",
+    title: "Zer0-tasks",
+    description: "A simple and effective task management software built with Django to help you organize and track your tasks with ease.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "circuit board",
-    tags: ["C++", "Embedded Linux", "Raspberry Pi", "Sensors"],
-    link: "https://github.com/Sv1745",
+    imageHint: "task list",
+    tags: ["TypeScript", "Django", "CSS", "Task Management"],
+    link: "https://github.com/Sv1745/z3r0-tasks",
   },
   {
-    title: "3D Animated Short: 'Orbital'",
-    description: "A short animated film designed and rendered in Blender, telling a story of a lone satellite's journey through space.",
+    title: "Minimal Tiny Core Loginware",
+    description: "A custom embedded Linux OS with a secure login system, developed as part of an internship at Loginware Softtec.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "3d animation",
-    tags: ["Blender", "3D Modeling", "Animation", "Storytelling"],
-    link: "https://github.com/Sv1745",
+    imageHint: "embedded linux",
+    tags: ["C++", "Linux", "Embedded Systems", "Shell Scripting"],
+    link: "https://github.com/Sv1745/Minimal-Tiny-Core-Loginware",
   },
   {
-    title: "Portfolio Web Application",
-    description: "A dynamic personal portfolio website built with Django to showcase projects, skills, and blog posts with a custom admin panel.",
+    title: "design2sketchstudio",
+    description: "An online drag-and-drop website generator that allows users to create and export websites with an intuitive interface.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "web development",
-    tags: ["Django", "Python", "HTML/CSS", "JavaScript"],
-    link: "https://github.com/Sv1745",
+    imageHint: "website builder interface",
+    tags: ["TypeScript", "Drag & Drop", "Web Tools"],
+    link: "https://github.com/Sv1745/sketch2shipstudio",
   },
 ];
 
@@ -52,7 +52,7 @@ export function Projects() {
     >
       <div className="grid md:grid-cols-2 gap-8">
         {projectData.map((project) => (
-          <Card3D key={project.title} className="flex flex-col overflow-hidden bg-card/80 border-primary/20 backdrop-blur-sm">
+          <Card3D key={project.title} className="flex flex-col overflow-hidden bg-card/80 border-primary/20 backdrop-blur-sm rounded-lg">
             <CardHeader className="p-0">
                 <Image
                     src={project.image}
@@ -63,19 +63,19 @@ export function Projects() {
                     data-ai-hint={project.imageHint}
                 />
             </CardHeader>
-            <CardContent className="p-6 flex-grow">
+            <div className="p-6 flex flex-col flex-grow">
               <CardTitle className="font-headline text-xl mb-2 text-primary">{project.title}</CardTitle>
-              <p className="text-foreground/80">{project.description}</p>
-            </CardContent>
-            <CardFooter className="p-6 pt-0 flex flex-col items-start gap-4">
-              <div className="flex flex-wrap gap-2">
+              <p className="text-foreground/80 flex-grow">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mt-4">
                 {project.tags.map((tag) => (
                   <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary border-none">
                     {tag}
                   </Badge>
                 ))}
               </div>
-              <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            </div>
+            <CardFooter className="p-6 pt-0">
+              <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full">
                 <Link href={project.link} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-4 w-4" /> View on GitHub
                 </Link>

@@ -3,11 +3,10 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { Projects } from '@/components/Projects';
-import { Testimonials } from '@/components/Testimonials';
-import { Journey } from '@/components/Journey';
 import { Contact } from '@/components/Contact';
-import { ResumeRefiner } from '@/components/ResumeRefiner';
 import { TechArsenal } from '@/components/TechArsenal';
+import { ProfessionalExperience } from '@/components/ProfessionalExperience';
+import { Education } from '@/components/Education';
 
 export default function Home() {
   return (
@@ -16,11 +15,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
+        <Education />
         <TechArsenal />
         <Projects />
-        <Testimonials />
-        <Journey />
-        <ResumeRefiner />
+        <ProfessionalExperience />
         <Contact />
       </main>
       <Footer />
