@@ -5,13 +5,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import Image from "next/image";
 
 const techStack = [
-  { name: "Python", imgSrc: "https://placehold.co/100x100.png", imgHint: "Python logo", category: "Backend" },
-  { name: "C++", imgSrc: "https://placehold.co/100x100.png", imgHint: "C++ logo", category: "System" },
-  { name: "JavaScript", imgSrc: "https://placehold.co/100x100.png", imgHint: "JavaScript logo", category: "Frontend" },
-  { name: "React", imgSrc: "https://placehold.co/100x100.png", imgHint: "React logo", category: "Frontend" },
-  { name: "Next.js", imgSrc: "https://placehold.co/100x100.png", imgHint: "Next.js logo", category: "Frontend" },
-  { name: "Tailwind", imgSrc: "https://placehold.co/100x100.png", imgHint: "Tailwind CSS logo", category: "Frontend" },
-  { name: "Blender", imgSrc: "https://placehold.co/100x100.png", imgHint: "Blender logo", category: "3D Tools" },
+  { name: "Python", imgSrc: "/python.png", imgHint: "Python logo", category: "Backend" },
+  { name: "C++", imgSrc: "/c++.png", imgHint: "C++ logo", category: "System" },
+  { name: "JavaScript", imgSrc: "/js.png", imgHint: "JavaScript logo", category: "Frontend" },
+  { name: "React", imgSrc: "/react.png", imgHint: "React logo", category: "Frontend" },
+  { name: "Next.js", imgSrc: "/Next.js.png", imgHint: "Next.js logo", category: "Frontend" },
+  { name: "Tailwind", imgSrc: "/Tailwind CSS.png", imgHint: "Tailwind CSS logo", category: "Frontend" },
+  { name: "Blender", imgSrc: "/Blender.png", imgHint: "Blender logo", category: "3D Tools" },
 ];
 
 export function TechArsenal() {

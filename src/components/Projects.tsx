@@ -11,7 +11,7 @@ const projectData = [
   {
     title: "Visitlytics",
     description: "A visitor tracking application designed to cater to a wide range of business requirements, built with Node.js and EJS.",
-    image: "https://placehold.co/600x400.png",
+    image: "/Visitlytics.png",
     imageHint: "visitor analytics",
     tags: ["TypeScript", "Node.js", "EJS", "PLpgSQL"],
     link: "https://github.com/Sv1745/visitlytics",
@@ -19,7 +19,7 @@ const projectData = [
   {
     title: "Zer0-tasks",
     description: "A simple and effective task management software built with Django to help you organize and track your tasks with ease.",
-    image: "https://placehold.co/600x400.png",
+    image: "/z3r0.png",
     imageHint: "task list",
     tags: ["TypeScript", "Django", "CSS", "Task Management"],
     link: "https://github.com/Sv1745/z3r0-tasks",
@@ -27,7 +27,7 @@ const projectData = [
   {
     title: "Minimal Tiny Core Loginware",
     description: "A custom embedded Linux OS with a secure login system, developed as part of an internship at Loginware Softtec.",
-    image: "https://placehold.co/600x400.png",
+    image: "/tiny2.webp",
     imageHint: "embedded linux",
     tags: ["C++", "Linux", "Embedded Systems", "Shell Scripting"],
     link: "https://github.com/Sv1745/Minimal-Tiny-Core-Loginware",
@@ -35,7 +35,7 @@ const projectData = [
   {
     title: "design2sketchstudio",
     description: "An online drag-and-drop website generator that allows users to create and export websites with an intuitive interface.",
-    image: "https://placehold.co/600x400.png",
+    image: "/websitegen.png",
     imageHint: "website builder interface",
     tags: ["TypeScript", "Drag & Drop", "Web Tools"],
     link: "https://github.com/Sv1745/sketch2shipstudio",

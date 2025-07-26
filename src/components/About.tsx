@@ -30,7 +30,7 @@ export function About() {
             <div className="relative">
                 <div className="animated-border">
                     <Image
-                        src="https://placehold.co/400x400.png"
+                        src="/SVSM.jpg"
                         alt="Srivathsa S Murthy"
                         width={300}
                         height={300}
