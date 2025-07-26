@@ -40,7 +40,7 @@ export function Hero() {
     <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       <div className="relative z-10 flex flex-col items-start gap-6 p-4 md:p-8 max-w-4xl mx-auto w-full -mt-24">
         <div className="p-6 md:p-8 text-left">
-            <p className="text-4xl md:text-5xl font-cursive text-primary mb-2">Hello, Universe.</p>
+            <p className="text-4xl md:text-5xl font-cursive text-primary mb-2">Hello, Universe. I'm</p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-headline font-bold tracking-tighter text-white whitespace-nowrap">
                 Srivathsa S Murthy
             </h1>
