@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Interactive3D from '@/components/Interactive3D';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Grid from '@/components/Grid';
 
 export const metadata: Metadata = {
