@@ -16,8 +16,8 @@ const experiences = [
     color: "from-blue-600 to-blue-800",
     description: "Leading the design and creative club, organizing events and fostering innovation in digital arts and design.",
     achievements: [
-      "Led team of 50+ members",
-      "Organized 5+ major events",
+      "Led team of 40+ members",
+      "Organized 3+ major events",
       "Increased club membership by 200%"
     ]
   },
@@ -37,7 +37,7 @@ const experiences = [
     ]
   },
   {
-    role: "1st Place Winner - GEEKMAYHEM",
+    role: "1st Place Winner - Tech Trail",
     company: "NMIT - Blockchain & Cybersecurity Club",
     date: "May 2024",
     category: "Achievement",
@@ -58,10 +58,9 @@ const experiences = [
     category: "Development",
     icon: Code,
     color: "from-cyan-600 to-cyan-800",
-    description: "Developing responsive web applications and contributing to open-source projects.",
+    description: "Developing responsive web applications.",
     achievements: [
-      "Built 10+ web applications",
-      "Contributed to 5+ open source projects",
+      "Actively participated in the organization of Quant-A-Maze, a national level 48-hour hackathon",
       "Earned Quant-A-Maze certification"
     ]
   },
@@ -74,9 +73,10 @@ const experiences = [
     color: "from-orange-600 to-orange-800",
     description: "Developed custom embedded Linux operating systems for specialized hardware applications.",
     achievements: [
-      "Optimized boot time by 40%",
-      "Implemented custom drivers",
-      "Reduced system footprint by 30%"
+      "Engineered a custom Linux distribution",
+      "Built a specialized Linux image",
+      "Customized a Linux OS",
+      "Created a tailored Linux build"
     ]
   },
   {
@@ -88,9 +88,9 @@ const experiences = [
     color: "from-indigo-600 to-indigo-800",
     description: "Active member contributing to Google technologies and community building.",
     achievements: [
-      "Mentored 20+ students",
-      "Organized 3+ workshops",
-      "Led Android development sessions"
+      "Led the creative design and branding for all major club activities and events.",
+      "Engaged in intensive development workshops as a key team member for the Google Solution Challenge.",
+      "Contributed to project strategy and design."
     ]
   }
 ];

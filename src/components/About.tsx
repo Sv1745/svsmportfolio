@@ -42,7 +42,7 @@ export function About() {
         </div>
         <div className="md:col-span-3 space-y-6">
             <p className="text-lg text-foreground/90 leading-relaxed">
-              Hi! I'm a passionate engineering student from Bangalore, pursuing a degree in Artificial Intelligence and Machine Learning. My fascination with the cosmos isn't just a hobby—it's the driving force behind my dream to launch my own space technology company. My journey is a blend of creativity and technology. As a 3D modeler and animator, I bring ideas to life, while my coding skills help me solve real-world problems. I thrive on learning, experimenting, and collaborating on innovative ideas.
+              Hi! I’m an engineering student from Bangalore, specializing in Artificial Intelligence and Machine Learning. I’m passionate about developing tech-driven solutions and love exploring the creative side of things through 3D modeling and animation. I enjoy working at the intersection of logic and design-solving problems, telling visual stories, and building what I imagine. I'm always looking for opportunities to work on projects that are ambitious, forward-thinking, and occasionally a little beyond the edge of what's here on Earth.
             </p>
         </div>
       </Card>

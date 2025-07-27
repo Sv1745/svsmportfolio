@@ -17,17 +17,17 @@ const projectData = [
     link: "https://github.com/Sv1745/visitlytics",
   },
   {
-    title: "Zer0-tasks",
-    description: "A simple and effective task management software built with Django to help you organize and track your tasks with ease.",
+    title: "Z3r0-tasks",
+    description: "A simple and effective task management software built with Typescript to help you organize and track your tasks with ease.",
     image: "/z3r0.png",
     imageHint: "task list",
-    tags: ["TypeScript", "Django", "CSS", "Task Management"],
+    tags: ["TypeScript", "CSS", "Task Management"],
     link: "https://github.com/Sv1745/z3r0-tasks",
   },
   {
     title: "Minimal Tiny Core Loginware",
     description: "A custom embedded Linux OS with a secure login system, developed as part of an internship at Loginware Softtec.",
-    image: "/tiny2.webp",
+    image: "/tiny2.jpg",
     imageHint: "embedded linux",
     tags: ["C++", "Linux", "Embedded Systems", "Shell Scripting"],
     link: "https://github.com/Sv1745/Minimal-Tiny-Core-Loginware",
@@ -59,7 +59,7 @@ export function Projects() {
                     alt={project.title}
                     width={600}
                     height={400}
-                    className="w-full h-48 object-cover rounded-t-lg"
+                    className="w-full h-48 object-cover object-top rounded-t-lg"
                     data-ai-hint={project.imageHint}
                 />
             </CardHeader>
