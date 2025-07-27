@@ -5,8 +5,8 @@ import Interactive3D from '@/components/Interactive3D';
 import Grid from '@/components/Grid';
 
 export const metadata: Metadata = {
-  title: 'Cosmic Coder | Srivathsa S Murthy',
-  description: "Srivathsa S Murthy's portfolio: an AI/ML Engineer, 3D Modeler, and Space Enthusiast.",
+  title: 'Srivathsa S Murthy',
+  description: "Srivathsa S Murthy's portfolio: an AI/ML Engineer, 3D Animator, and Space Enthusiast.",
 };
 
 export default function RootLayout({
