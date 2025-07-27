@@ -5,7 +5,7 @@ import { ai } from '@/ai/genkit';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 // import { ContactFormSchema, ContactFormData } from '@/lib/schemas/contact';
-import { ContactFormSchema, ContactFormData } from '../../lib/schemas/contact';
+import { ContactFormSchema, ContactFormData } from '@/lib/schemas/contact';
 
 const sendMessageFlow = ai.defineFlow(
   {
