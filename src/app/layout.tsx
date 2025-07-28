@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Interactive3D from '@/components/Interactive3D';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 import Grid from '@/components/Grid';
 
 export const metadata: Metadata = {
@@ -25,8 +26,10 @@ export default function RootLayout({
       <body className="font-body antialiased bg-background text-foreground selection:bg-primary/30">
         <Grid />
         <Interactive3D />
+        <Analytics/>
         <div className="relative z-10">
           {children}
+          <SpeedInsights/>
         </div>
         <Toaster />
       </body>
