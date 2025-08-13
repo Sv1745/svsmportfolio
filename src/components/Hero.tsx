@@ -71,7 +71,7 @@ export function Hero() {
             </div>
             <div className="animated-border-box rounded-md">
                 <Button asChild variant="outline" className="bg-background/80 hover:bg-primary hover:text-primary-foreground text-primary w-full sm:w-auto rounded-md border-primary/50">
-                    <Link href="/Srivathsa-RESUME.pdf" target="_blank" download>
+                    <Link href="/Srivathsa_Resume.pdf" target="_blank" download>
                         <Download className="mr-2 h-4 w-4" /> Resume
                     </Link>
                 </Button>
